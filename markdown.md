@@ -23,7 +23,7 @@ Things you may want to cover:
 
 * ...
 
-* what the fuck!s
+*
 
 
 Please feel free to use a different markup language if you do not plan to run
