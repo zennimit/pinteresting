@@ -3,6 +3,6 @@ class PagesController < ApplicationController
   end
   def gogo
   end
-  def haha
+  def hahaha
   end
 end
