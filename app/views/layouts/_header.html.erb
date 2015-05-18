@@ -15,12 +15,16 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
 
 
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-                </li>
-      <li> <%= link_to "Home", root_path %> </li>
-      <li> <%= link_to "About us", yo_path %> </li>
-      </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "About", yo_path %></li>
+      <% if user_signed_in? %>
+        <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+      <% else %>
+        <li><%= link_to "Sign in", new_user_session_path %></li>
+      <% end %>
+  </ul>
+
     </div><!-- /.navbar-collapse -->
 
 </nav>
